@@ -18,3 +18,7 @@ D:\LAB 2\MatrixOperation\obj\Debug\net6.0-windows\refint\MatrixOperation.dll
 D:\LAB 2\MatrixOperation\obj\Debug\net6.0-windows\MatrixOperation.pdb
 D:\LAB 2\MatrixOperation\obj\Debug\net6.0-windows\MatrixOperation.genruntimeconfig.cache
 D:\LAB 2\MatrixOperation\obj\Debug\net6.0-windows\ref\MatrixOperation.dll
+D:\LAB 2\MatrixOperation\bin\Debug\net6.0-windows\MatrixLibrary.dll
+D:\LAB 2\MatrixOperation\bin\Debug\net6.0-windows\MatrixLibrary.pdb
+D:\LAB 2\MatrixOperation\obj\Debug\net6.0-windows\MatrixOperation.csproj.AssemblyReference.cache
+D:\LAB 2\MatrixOperation\obj\Debug\net6.0-windows\MatrixOperation.csproj.CopyComplete
