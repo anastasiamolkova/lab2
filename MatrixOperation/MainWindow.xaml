@@ -19,8 +19,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="219,420,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" Width="65"/>
         <Button IsEnabled="False" x:Name="btnCalculate" Content="Рассчитать" HorizontalAlignment="Left" Margin="482,34,0,0" VerticalAlignment="Top" Click="BtnCalculate_Click"/>
         <Button IsEnabled="False" x:Name="btnSave" Content="Сохранить" HorizontalAlignment="Left" Margin="427,94,0,0" VerticalAlignment="Top" Click="BtnSave_Click"/>
-
-        <!-- Добавляем ComboBox для выбора операции -->
         <ComboBox Name="cbOperation" HorizontalAlignment="Left" Margin="580,34,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Сложение"/>
             <ComboBoxItem Content="Умножение"/>

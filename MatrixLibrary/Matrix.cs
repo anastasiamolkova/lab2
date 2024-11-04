@@ -3,7 +3,7 @@ using System.IO;
 
 namespace MatrixLibrary
 {
-    public class Matrix<T> where T : struct, IComparable, IFormattable, IConvertible, IComparable<T>, IEquatable<T>
+    public class Matrix<T> where T : struct
     {
         private T[,] _data;
         public int Rows { get; }

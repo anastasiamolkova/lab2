@@ -38,5 +38,47 @@ namespace MatrixTests
                 }
             }
         }
+
+        [TestMethod]
+        public void TestMatrixAdditionDifferentSizes()
+        {
+            // Arrange
+            Matrix<int> matrixA = new Matrix<int>(2, 2);
+            Matrix<int> matrixB = new Matrix<int>(3, 3);
+
+            // Act & Assert
+            Assert.ThrowsException<ArgumentException>(() => MatrixOperations.Add(matrixA, matrixB));
+        }
+
+        [TestMethod]
+        public void TestMatrixAdditionEmptyMatrix()
+        {
+            // Arrange
+            Matrix<int> matrixA = new Matrix<int>(0, 0);
+            Matrix<int> matrixB = new Matrix<int>(0, 0);
+
+            // Act
+            Matrix<int> resultMatrix = MatrixOperations.Add(matrixA, matrixB);
+
+            // Assert
+            Assert.AreEqual(0, resultMatrix.Rows);
+            Assert.AreEqual(0, resultMatrix.Columns);
+        }
+
+        [TestMethod]
+        public void TestMatrixAdditionSingleElement()
+        {
+            // Arrange
+            Matrix<int> matrixA = new Matrix<int>(1, 1);
+            Matrix<int> matrixB = new Matrix<int>(1, 1);
+            matrixA[0, 0] = 5;
+            matrixB[0, 0] = 10;
+
+            // Act
+            Matrix<int> resultMatrix = MatrixOperations.Add(matrixA, matrixB);
+
+            // Assert
+            Assert.AreEqual(15, resultMatrix[0, 0]);
+        }
     }
 }
